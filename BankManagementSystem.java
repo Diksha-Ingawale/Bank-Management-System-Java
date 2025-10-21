@@ -194,8 +194,7 @@ public class BankManagementSystem {
 
     static void loadAccountsFromFile() {
         try {
-            File file = new File("data/accounts.txt");
-            file.getParentFile().mkdirs(); // create folder if not exist
+            File file = new File("accounts.txt");
             if (!file.exists()) {
                 return;
             }
